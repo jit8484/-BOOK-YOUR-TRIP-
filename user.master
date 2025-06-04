@@ -1,0 +1,234 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            height: 19px;
+        }
+        .style5
+        {
+            width: 950px;
+        }
+        body
+        {
+        	margin:0;
+        }
+        
+        .style6
+        {
+            width: 182px;
+        }
+        
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif">
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" cellpadding="0" cellspacing="0" class="style1">
+            <tr bgcolor="#DDEFF7">
+                <td>
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr>
+                            <td align="right">
+                                <table align="center" cellpadding="0" cellspacing="0" class="style1">
+                                    <tr>
+                                        <td align="left">
+                                            Welcome
+                                            <asp:Label ID="Label1" runat="server"></asp:Label>
+                                        </td>
+                                        <td>
+                                            <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" 
+                                                Font-Bold="True" Font-Size="Small" Font-Underline="False" ForeColor="Black" 
+                                                onclick="LinkButton7_Click" Visible="False">LOGIN</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton8" runat="server" CausesValidation="False" Font-Bold="True" Font-Size="Small" 
+                                                Font-Underline="False" ForeColor="Black" onclick="LinkButton8_Click" 
+                                                Visible="False">CREATE ACCOUNT</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton9" runat="server" CausesValidation="False" Font-Bold="True" Font-Size="Small" 
+                                                Font-Underline="False" ForeColor="Black" onclick="LinkButton9_Click" 
+                                                Visible="False">CHANGE PASSWORD</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton11" runat="server" CausesValidation="False" Font-Bold="True" Font-Size="Small" 
+                                                Font-Underline="False" ForeColor="Black" onclick="LinkButton11_Click" 
+                                                Visible="False">Booking History</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton10" runat="server" CausesValidation="False" Font-Bold="True" Font-Size="Small" 
+                                                Font-Underline="False" ForeColor="Black" onclick="LinkButton10_Click" 
+                                                Visible="False">LOGOUT</asp:LinkButton>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr bgcolor="#3499CB">
+                <td class="style4">
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr>
+                            <td>
+                                <asp:Image ID="Image1" runat="server" Height="225px" 
+                                    ImageUrl="~/images/tourism.jpg" Width="950px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr bgcolor="#DDEFF7">
+                <td>
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr align="center">
+                            <td bgcolor="#2567BD" width="158">
+                                <asp:LinkButton ID="LinkButton1" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700; font-size: small;" 
+                                    CausesValidation="False" onclick="LinkButton1_Click">Home</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#97111B" width="158">
+                                <asp:LinkButton ID="LinkButton2" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700; font-size: small;" 
+                                    CausesValidation="False" onclick="LinkButton2_Click">Places to Visit</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#35831D" width="158">
+                                <asp:LinkButton ID="LinkButton3" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700; font-size: small;" 
+                                    CausesValidation="False" onclick="LinkButton3_Click">Packages</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#2567BD" width="158">
+                                <asp:Menu ID="Menu1" runat="server" Height="27px" 
+                                    style="font-weight: 700; font-family: Arial, Helvetica, sans-serif" 
+                                    Width="76px">
+                                    <StaticMenuItemStyle Font-Size="Small" ForeColor="White" />
+                                    <DynamicMenuItemStyle BackColor="#2567BD" Font-Bold="True" Font-Size="Small" 
+                                        ForeColor="White" />
+                                    <Items>
+                                        <asp:MenuItem Text="Search" Value="Search">
+                                            <asp:MenuItem NavigateUrl="~/searchplaces.aspx" Text="By Place" 
+                                                Value="By Place"></asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/searchadv.aspx" Text="Advance Search" 
+                                                Value="By Name">
+                                            </asp:MenuItem>
+                                        </asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td bgcolor="#35831D" width="158">
+                                <asp:LinkButton ID="LinkButton5" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700; font-size: small;" 
+                                    CausesValidation="False" onclick="LinkButton5_Click">Feedback</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#97111B" width="158">
+                                <asp:LinkButton ID="LinkButton6" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700; font-size: small;" 
+                                    CausesValidation="False" onclick="LinkButton6_Click">Contact Us</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+          <tr bgcolor="#7AB1DE"><td>
+        <table align="center" cellpadding="0" cellspacing="0" class="style5" bgcolor="White">
+            <tr>
+                <td>
+                    <table align="center" class="style1">
+                        <tr>
+                            <td class="style6" valign="top">
+                                <asp:TreeView ID="TreeView1" runat="server" Height="94px" 
+                                    ImageSet="BulletedList3" ShowExpandCollapse="False" 
+                                    style="font-weight: 700; font-family: Arial, Helvetica, sans-serif" 
+                                    Width="125px">
+                                    <ParentNodeStyle Font-Bold="False" />
+                                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                                        HorizontalPadding="0px" VerticalPadding="0px" />
+                                    <Nodes>
+                                        <asp:TreeNode NavigateUrl="~/showstates.aspx" Text="States" Value="States">
+                                            <asp:TreeNode NavigateUrl="showcity.aspx?cid=100" Text="Punjab" Value="Punjab">
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=14" Text="Amritsar" 
+                                                    Value="Amritsar"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=54" Text="Ropar" Value="Ropar">
+                                                </asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="showcity.aspx?cid=106" Text="Uttar Pardesh" 
+                                                Value="Uttar Pardesh">
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=56" Text="Varanasi" 
+                                                    Value="Varanasi"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=60" Text="Vridhavan" 
+                                                    Value="Vridhavan"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=58" Text="Agra" Value="Agra">
+                                                </asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="showcity.aspx?cid=105" Text="Jammu &amp; Kashmir" 
+                                                Value="Jammu &amp; Kashmir">
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=44" Text="Jammu" Value="Jammu">
+                                                </asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=18" Text="Srinagar" 
+                                                    Value="Srinagar"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=42" Text="Kashmir" 
+                                                    Value="Kashmir"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=20" Text="Leh Ladakh" 
+                                                    Value="Leh Ladakh"></asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="showcity.aspx?cid=103" Text="Himachal Pardesh" 
+                                                Value="Himachal Pardesh">
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=16" Text="Manali" Value="Manali">
+                                                </asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=10" Text="Shimla" Value="Shimla">
+                                                </asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=50" Text="Kangra" Value="Kangra">
+                                                </asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=48" Text="Una" Value="Una">
+                                                </asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Delhi" Value="Delhi"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="showcity.aspx?cid=104" Text="Uttrakhand" 
+                                                Value="Uttrakhand">
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=26" Text="Haridwar" 
+                                                    Value="Haridwar"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=28" Text="Rishikesh" 
+                                                    Value="Rishikesh"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=22" Text="Nanital" 
+                                                    Value="Nanital"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=24" Text="Mansoori" 
+                                                    Value="Mansoori"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=32" Text="Badrinath" 
+                                                    Value="Badrinath"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=30" Text="Kedarnath" 
+                                                    Value="Kedarnath"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=38" Text="Hemkund Sahib" 
+                                                    Value="Hemkund Sahib"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=36" Text="Yamnotri" 
+                                                    Value="Yamnotri"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="showplaces.aspx?gid=34" Text="Gangotri" 
+                                                    Value="Gangotri"></asp:TreeNode>
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                                    </Nodes>
+                                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                </asp:TreeView>
+                                <br />
+                            </td>
+                            <td valign="top" width="750px">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>  </td></tr>
+          </table>
+    </div>
+    </form>
+</body>
+</html>

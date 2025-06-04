@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            height: 19px;
+        }
+        .style5
+        {
+            width: 950px;
+        }
+        body
+        {
+        	margin:0;
+        }
+        
+        .style6
+        {
+        }
+        
+        .style7
+        {
+            color: #FFFFFF;
+        }
+        
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif">
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" cellpadding="0" cellspacing="0" class="style1">
+            <tr bgcolor="#DDEFF7">
+                <td>
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr>
+                            <td align="right">
+                                <table align="center" cellpadding="0" cellspacing="0" class="style1">
+                                    <tr>
+                                        <td align="left">
+                                            Welcome
+                                            <asp:Label ID="Label1" runat="server">Admin</asp:Label>
+                                        </td>
+                                        <td>
+&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="LinkButton10" runat="server" Font-Bold="True" Font-Size="Small" 
+                                                Font-Underline="False" ForeColor="Black" onclick="LinkButton10_Click">LOGOUT</asp:LinkButton>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr bgcolor="#3499CB">
+                <td class="style4">
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr>
+                            <td>
+                                <asp:Image ID="Image1" runat="server" Height="225px" 
+                                    ImageUrl="~/images/tourism.jpg" Width="950px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr bgcolor="#DDEFF7">
+                <td>
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr align="center">
+                            <td bgcolor="#2567BD" width="158">
+                                <asp:LinkButton ID="LinkButton1" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700" onclick="LinkButton1_Click" 
+                                    Font-Size="Small">Home</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#97111B" width="158">
+                                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                                            style="font-weight: 700; font-family: Arial, Helvetica, sans-serif; font-size: large">
+                                            <StaticMenuItemStyle Font-Bold="True" Font-Names="Arial, Helvetica, sans-serif" 
+                                                Font-Size="Small" ForeColor="White" />
+                                            <DynamicMenuItemStyle BackColor="#97111B" Font-Bold="True" Font-Size="Small" 
+                                                ForeColor="White" />
+                                            <Items>
+                                                <asp:MenuItem Text="Add" Value="Add">
+                                                    <asp:MenuItem NavigateUrl="~/addcategory.aspx" Text="Category" Value="Category">
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/addplaces.aspx" Text="Places" Value="Places">
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/addstates.aspx" Text="States" Value="States">
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/addcity.aspx" Text="City" Value="City">
+                                                    </asp:MenuItem>
+                                                </asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                            </td>
+                            <td bgcolor="#35831D" width="158" class="style7">
+                                        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" 
+                                            style="font-weight: 700; font-size: large">
+                                            <StaticMenuItemStyle Font-Bold="True" Font-Size="Small" ForeColor="White" />
+                                            <Items>
+                                                <asp:MenuItem Text="Update" Value="Update">
+                                                    <asp:MenuItem Text="Places" Value="Places" NavigateUrl="~/updtplace.aspx"></asp:MenuItem>
+                                                    <asp:MenuItem Text="States" Value="States" NavigateUrl="~/updtstate.aspx"></asp:MenuItem>
+                                                    <asp:MenuItem Text="City" Value="City" NavigateUrl="~/updtcity.aspx"></asp:MenuItem>
+                                                </asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                            </td>
+                            <td bgcolor="#97111B" width="158" class="style7">
+                                        <asp:Menu ID="Menu4" runat="server" Orientation="Horizontal" 
+                                            style="font-weight: 700; font-size: large">
+                                            <StaticMenuItemStyle Font-Bold="True" Font-Size="Small" ForeColor="White" />
+                                            <DynamicMenuItemStyle BackColor="#890F19" Font-Bold="True" Font-Size="Small" 
+                                                ForeColor="White" />
+                                            <Items>
+                                                <asp:MenuItem Text="View" Value="View">
+                                                    <asp:MenuItem Text="Members" Value="Category" 
+                                                        NavigateUrl="~/listofmembers.aspx"></asp:MenuItem>
+                                                    <asp:MenuItem Text="Feedback" Value="Places" NavigateUrl="~/viewfeedback.aspx"></asp:MenuItem>
+                                                    <asp:MenuItem Text="Bookings" Value="states" 
+                                                        NavigateUrl="~/listofbookings.aspx"></asp:MenuItem>
+                                                    <asp:MenuItem Text="Search" Value="City" NavigateUrl="~/searchuser.aspx"></asp:MenuItem>
+                                                </asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                            </td>
+                            <td bgcolor="#35831D" width="158" class="style7">
+                                <asp:LinkButton ID="LinkButton9" runat="server" Font-Bold="True" 
+                                    Font-Size="Small" Font-Underline="False" ForeColor="White" 
+                                    onclick="LinkButton9_Click">CHANGE PASSWORD</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+          <tr bgcolor="#7AB1DE"><td>
+        <table align="center" cellpadding="0" cellspacing="0" class="style5" bgcolor="White">
+            <tr>
+                <td>
+                    <table align="center" class="style1">
+                        <tr>
+                            <td class="style6" valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>  </td></tr>
+          <tr bgcolor="#5098D3"><td bgcolor="#DDEFF7">
+              <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                  <tr>
+                      <td align="center">
+                          Created by :- ABC</td>
+                            </tr>
+                        </table>
+                    </td></tr></table>
+    </div>
+    </form>
+</body>
+</html>
