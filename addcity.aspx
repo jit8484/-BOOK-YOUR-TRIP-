@@ -24,7 +24,7 @@
             <td>
                 &nbsp;</td>
         </tr>
-        <tr>
+        <tr> 
             <td class="style9">
                 &nbsp;</td>
             <td>
@@ -49,7 +49,7 @@
                     SelectCommand="SELECT [StateID], [Name] FROM [addstates]">
                 </asp:SqlDataSource>
             </td>
-        </tr>
+        </tr> 
         <tr>
             <td class="style10">
                 City Picture</td>
@@ -62,7 +62,7 @@
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
-        </tr>
+        </tr> 
         <tr>
             <td class="style9">
                 &nbsp;</td>
@@ -86,4 +86,5 @@
         </tr>
     </table>
 </asp:Content>
+
 
