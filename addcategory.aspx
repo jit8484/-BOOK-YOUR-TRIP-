@@ -39,13 +39,13 @@
         </tr>
         <tr>
             <td class="style9">
-                                        &nbsp;</td>
+                  &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
         <tr>
             <td class="style9">
-                                        &nbsp;</td>
+                 &nbsp;</td>
             <td>
                 <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
                     Text="Add category" />
@@ -53,17 +53,18 @@
         </tr>
         <tr>
             <td class="style9">
-                                        &nbsp;</td>
+                  &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
         <tr>
             <td class="style9">
-                                        &nbsp;</td>
+                      &nbsp;</td>
             <td>
                 <asp:Label ID="Label2" runat="server"></asp:Label>
             </td>
         </tr>
     </table>
 </asp:Content>
+
 
