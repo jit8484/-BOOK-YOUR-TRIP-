@@ -4,7 +4,7 @@
 📍 D.H.B. Soni College, Solapur  
 📅 Academic Year: 2024-25
 
----
+-----
 
 ## 📌 Project Overview
 
@@ -12,7 +12,7 @@
 
 The project aims to **digitalize and simplify the travel planning experience**, serving as a user-friendly and secure platform for both **tourists** and **administrators**.
 
----
+-----
 
 ## 🎯 Objectives
 
@@ -21,7 +21,7 @@ The project aims to **digitalize and simplify the travel planning experience**, 
 - Enable **admin control** for managing all destinations and bookings
 - Support online **feedback**, **search**, and **account management**
 
----
+-----
 
 ## 👨‍💻 Project Roles
 
