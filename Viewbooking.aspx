@@ -18,6 +18,7 @@
                 GridLines="None" Height="236px" Width="816px">
                 <RowStyle BackColor="#EFF3FB" />
                 <Columns>
+
                     <asp:BoundField DataField="Pname" HeaderText="Pname" 
                         SortExpression="Pname" />
                     <asp:BoundField DataField="Price" HeaderText="Price" 
@@ -37,6 +38,7 @@
                         ReadOnly="True" SortExpression="Orderno" />
                     <asp:BoundField DataField="BookingDt" HeaderText="BookingDt" 
                         SortExpression="BookingDt" />
+
                 </Columns>
 
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -59,5 +61,6 @@
     </tr>
 </table>
 </asp:Content>
+
 
 
