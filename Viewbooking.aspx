@@ -10,6 +10,7 @@
             &nbsp;View Bookings</h2>
         </td>
     </tr>
+
     <tr>
         <td>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
@@ -37,6 +38,7 @@
                     <asp:BoundField DataField="BookingDt" HeaderText="BookingDt" 
                         SortExpression="BookingDt" />
                 </Columns>
+
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
                 <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
@@ -51,9 +53,11 @@
                 <SelectParameters>
                     <asp:SessionParameter Name="un" SessionField="un" />
                 </SelectParameters>
+
             </asp:SqlDataSource>
         </td>
     </tr>
 </table>
 </asp:Content>
+
 
