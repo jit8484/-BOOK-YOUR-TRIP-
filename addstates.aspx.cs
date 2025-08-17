@@ -13,10 +13,12 @@ using System.Xml.Linq;
 using System.Data.SqlClient;
 
 public partial class addsates : System.Web.UI.Page
+
 {
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["ad"] == null)
+        
         {
             Response.Redirect("error.aspx");
         }
@@ -41,3 +43,4 @@ public partial class addsates : System.Web.UI.Page
         Label2.Text = "Category added succesfully";
     }
 }
+
