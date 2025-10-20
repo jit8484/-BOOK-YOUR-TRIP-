@@ -38,6 +38,7 @@ public partial class feedback : System.Web.UI.Page
         myconn.Open();
         int res = mycomm.ExecuteNonQuery();
         myconn.Close();
+        
         if (res == 1)
         {
             Response.Redirect("feedbackthnx.aspx");
@@ -48,3 +49,4 @@ public partial class feedback : System.Web.UI.Page
         }
     }
 }
+
