@@ -21,23 +21,28 @@ public partial class admin : System.Web.UI.MasterPage
         }
     }
     protected void LinkButton3_Click(object sender, EventArgs e)
+    
     {
 
     }
     protected void LinkButton1_Click(object sender, EventArgs e)
+    
     {
         Response.Redirect("adminpanel.aspx");
     }
     protected void LinkButton10_Click(object sender, EventArgs e)
+    
     {
         Session.Clear();
         Session.Abandon();
         Response.Redirect("home.aspx");
     }
     protected void LinkButton9_Click(object sender, EventArgs e)
+    
     {
         Response.Redirect("changepass.aspx");
     }
 }
+
 
 
