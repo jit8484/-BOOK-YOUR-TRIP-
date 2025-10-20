@@ -20,6 +20,9 @@ public partial class error : System.Web.UI.Page
     protected void LinkButton11_Click(object sender, EventArgs e)
     {
         Response.Redirect("login.aspx");
+        
     }
 }
+
+
 
